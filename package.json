@@ -1,22 +1,31 @@
 {
-  "name": "hep-email",
+  "name": "nextjs-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "run-p dev:*",
+    "dev:next": "next dev",
+    "dev:path": "pathpida --enableStatic --watch",
+    "build": "pathpida --enableStatic && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
-    "@types/node": "18.15.7",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest8",
+    "@types/react-dom": "latest1",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
+    "npm-run-all": "latest",
+    "pathpida": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   }
 }

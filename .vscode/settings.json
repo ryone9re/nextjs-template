@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "typescript.preferences.importModuleSpecifier": "non-relative"
+}
